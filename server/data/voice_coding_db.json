@@ -1,0 +1,604 @@
+{
+  "users": [
+    {
+      "id": "user_demo_default",
+      "name": "Demo Student",
+      "email": "demo@example.com",
+      "password_hash": "$2a$10$95veKB/GGXP1SX8beInKWODKfUnF78alaz/dGsGi31cOsI.WoQZcu",
+      "created_at": "2026-09-13T07:07:01.308Z"
+    },
+    {
+      "id": "user_student_default",
+      "name": "Alex Rivera",
+      "email": "student@voicecode.ai",
+      "password_hash": "$2a$10$K3yTTTeaLk9Sl6/3Ow50VOsdbgbjzQWmt6fE96E82BSxbydUdaU/6",
+      "created_at": "2026-09-13T09:34:52.270Z"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "conv_ea73df33-5859-4b04-9dd8-146dfce2cb81",
+      "user_id": "user_demo_default",
+      "title": "Check Prime Number (Python - Beginner)",
+      "language": "Python",
+      "learning_level": "Beginner",
+      "created_at": "2026-09-27T15:15:09.727Z",
+      "updated_at": "2026-09-27T15:15:09.727Z"
+    },
+    {
+      "id": "conv_da3a8770-76a3-40e0-b776-75de5bc91c7c",
+      "user_id": "user_demo_default",
+      "title": "Check Prime Number (Python - Beginner)",
+      "language": "Python",
+      "learning_level": "Beginner",
+      "created_at": "2026-09-27T15:15:00.830Z",
+      "updated_at": "2026-09-27T15:15:00.830Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_6129efad-00d6-4230-b694-518181f00f12",
+      "conversation_id": "conv_da3a8770-76a3-40e0-b776-75de5bc91c7c",
+      "role": "user",
+      "content": "write a prime number",
+      "metadata_json": null,
+      "created_at": "2026-09-27T15:15:00.837Z"
+    },
+    {
+      "id": "msg_f54acbb5-139a-4bce-88d0-c10b8d9ac4cd",
+      "conversation_id": "conv_da3a8770-76a3-40e0-b776-75de5bc91c7c",
+      "role": "assistant",
+      "content": "A prime number is a whole number greater than 1 that has only two factors: 1 and itself (such as 2, 3, 5, 7, 11).",
+      "metadata_json": "{\"understanding\":\"I understood your request as a simple Beginner prime number program in Python.\",\"title\":\"Check Prime Number (Python - Beginner)\",\"language\":\"Python\",\"learningLevel\":\"Beginner\",\"explanation\":\"A prime number is a whole number greater than 1 that has only two factors: 1 and itself (such as 2, 3, 5, 7, 11).\",\"complexity\":null,\"algorithm\":[\"1. Take a number `num`.\",\"2. If `num <= 1`, it is not prime.\",\"3. Loop from 2 up to `num - 1`.\",\"4. If `num` divides evenly by any number, it is not prime.\",\"5. If no divisors are found, it is a prime number.\"],\"code\":\"# Beginner Python Program: Check Prime Number\\n\\ndef check_prime(number):\\n    # Step 1: Numbers <= 1 are not prime\\n    if number <= 1:\\n        return False\\n\\n    # Step 2: Test every number from 2 up to number - 1\\n    for i in range(2, number):\\n        if number % i == 0:\\n            return False  # Divisible with 0 remainder -> not prime\\n\\n    return True  # No divisors found -> prime!\\n\\n# Test with a number\\nsample_num = 7\\nif check_prime(sample_num):\\n    print(f\\\"{sample_num} is a prime number\\\")\\nelse:\\n    print(f\\\"{sample_num} is not a prime number\\\")\\n\",\"lineByLine\":[{\"line\":\"def check_prime(number):\",\"explanation\":\"Defines a beginner function to check prime.\"},{\"line\":\"for i in range(2, number):\",\"explanation\":\"Loops through all numbers from 2 up to number - 1.\"},{\"line\":\"if number % i == 0:\",\"explanation\":\"Modulo % checks if remainder is 0.\"}],\"exampleIO\":{\"input\":\"7\",\"output\":\"7 is a prime number\"},\"commonMistakes\":[\"Thinking 1 is prime (1 is not prime).\",\"Starting range at 1: `range(1, number)` will always return False!\"],\"debugInfo\":{\"isDebugging\":false}}",
+      "created_at": "2026-09-27T15:15:00.843Z"
+    },
+    {
+      "id": "msg_2c206b52-d2fc-4443-ad5d-7dc11093ab95",
+      "conversation_id": "conv_ea73df33-5859-4b04-9dd8-146dfce2cb81",
+      "role": "user",
+      "content": "Write a Python program to check whether a number is prime.",
+      "metadata_json": null,
+      "created_at": "2026-09-27T15:15:09.731Z"
+    },
+    {
+      "id": "msg_51ec2a41-0e9d-48cc-9469-1a0e34ec7496",
+      "conversation_id": "conv_ea73df33-5859-4b04-9dd8-146dfce2cb81",
+      "role": "assistant",
+      "content": "A prime number is a whole number greater than 1 that has only two factors: 1 and itself (such as 2, 3, 5, 7, 11).",
+      "metadata_json": "{\"understanding\":\"I understood your request as a simple Beginner prime number program in Python.\",\"title\":\"Check Prime Number (Python - Beginner)\",\"language\":\"Python\",\"learningLevel\":\"Beginner\",\"explanation\":\"A prime number is a whole number greater than 1 that has only two factors: 1 and itself (such as 2, 3, 5, 7, 11).\",\"complexity\":null,\"algorithm\":[\"1. Take a number `num`.\",\"2. If `num <= 1`, it is not prime.\",\"3. Loop from 2 up to `num - 1`.\",\"4. If `num` divides evenly by any number, it is not prime.\",\"5. If no divisors are found, it is a prime number.\"],\"code\":\"# Beginner Python Program: Check Prime Number\\n\\ndef check_prime(number):\\n    # Step 1: Numbers <= 1 are not prime\\n    if number <= 1:\\n        return False\\n\\n    # Step 2: Test every number from 2 up to number - 1\\n    for i in range(2, number):\\n        if number % i == 0:\\n            return False  # Divisible with 0 remainder -> not prime\\n\\n    return True  # No divisors found -> prime!\\n\\n# Test with a number\\nsample_num = 7\\nif check_prime(sample_num):\\n    print(f\\\"{sample_num} is a prime number\\\")\\nelse:\\n    print(f\\\"{sample_num} is not a prime number\\\")\\n\",\"lineByLine\":[{\"line\":\"def check_prime(number):\",\"explanation\":\"Defines a beginner function to check prime.\"},{\"line\":\"for i in range(2, number):\",\"explanation\":\"Loops through all numbers from 2 up to number - 1.\"},{\"line\":\"if number % i == 0:\",\"explanation\":\"Modulo % checks if remainder is 0.\"}],\"exampleIO\":{\"input\":\"7\",\"output\":\"7 is a prime number\"},\"commonMistakes\":[\"Thinking 1 is prime (1 is not prime).\",\"Starting range at 1: `range(1, number)` will always return False!\"],\"debugInfo\":{\"isDebugging\":false}}",
+      "created_at": "2026-09-27T15:15:09.735Z"
+    }
+  ],
+  "programs": [
+    {
+      "id": "prog_dc37f25b-b000-4b5d-b956-3f09279024f8",
+      "user_id": "user_demo_default",
+      "title": "add two numbers",
+      "language": "Python",
+      "code": "# Advanced Solution for: add two numbers\n\ndef solve_problem():\n    print(\"Running solution for: add two numbers\")\n    data = [10, 20, 30, 40, 50]\n    total = sum(data)\n    print(f\"Result: {total}\")\n\nif __name__ == \"__main__\":\n    solve_problem()\n",
+      "description": "",
+      "created_at": "2026-09-13T08:55:41.230Z"
+    },
+    {
+      "id": "prog_cc0a92ff-b876-40ca-904d-7ebc5b557c72",
+      "user_id": "user_demo_default",
+      "title": "add two numbers",
+      "language": "Python",
+      "code": "# Advanced Solution for: add two numbers\n\ndef solve_problem():\n    print(\"Running solution for: add two numbers\")\n    data = [10, 20, 30, 40, 50]\n    total = sum(data)\n    print(f\"Result: {total}\")\n\nif __name__ == \"__main__\":\n    solve_problem()\n",
+      "description": "",
+      "created_at": "2026-09-13T08:55:39.355Z"
+    },
+    {
+      "id": "prog_14a6c356-12bb-42e1-87c7-3d9384308f25",
+      "user_id": "user_demo_default",
+      "title": "Bubble Sort Algorithm in Python",
+      "language": "Python",
+      "code": "def bubble_sort(arr):\n    n = len(arr)\n    # Traverse through all array elements\n    for i in range(n):\n        swapped = False\n        # Last i elements are already in place\n        for j in range(0, n - i - 1):\n            if arr[j] > arr[j + 1]:\n                # Swap elements\n                arr[j], arr[j + 1] = arr[j + 1], arr[j]\n                swapped = True\n        # If no elements were swapped, array is already sorted\n        if not swapped:\n            break\n    return arr\n\nsample_list = [64, 34, 25, 12, 22, 11, 90]\nprint(\"Original List:\", sample_list)\nsorted_list = bubble_sort(sample_list.copy())\nprint(\"Sorted List:  \", sorted_list)\n",
+      "description": "",
+      "created_at": "2026-09-13T07:35:05.621Z"
+    },
+    {
+      "id": "prog_77627e36-387b-43ba-83fb-add83e43c7a3",
+      "user_id": "user_demo_default",
+      "title": "Check Prime Number in Python",
+      "language": "Python",
+      "code": "# Python program to check if a number is prime\n\ndef check_prime(num):\n    # Step 1: Numbers <= 1 are not prime\n    if num <= 1:\n        return False\n\n    # Step 2: Check divisors from 2 up to num - 1\n    for i in range(2, num):\n        if num % i == 0:\n            return False  # Found a divisor, not prime\n\n    return True  # No divisors found, it is prime\n\n# Test with a sample number\nnumber = 7\nif check_prime(number):\n    print(f\"{number} is a prime number\")\nelse:\n    print(f\"{number} is not a prime number\")\n",
+      "description": "",
+      "created_at": "2026-09-13T07:30:21.378Z"
+    },
+    {
+      "id": "prog_e507f781-d949-4a49-816b-d88111415b24",
+      "user_id": "user_demo_default",
+      "title": "Check Prime Number in Python",
+      "language": "Python",
+      "code": "# Python program to check if a number is prime\n\ndef check_prime(num):\n    # Step 1: Numbers <= 1 are not prime\n    if num <= 1:\n        return False\n\n    # Step 2: Check divisors from 2 up to num - 1\n    for i in range(2, num):\n        if num % i == 0:\n            return False  # Found a divisor, not prime\n\n    return True  # No divisors found, it is prime\n\n# Test with a sample number\nnumber = 7\nif check_prime(number):\n    print(f\"{number} is a prime number\")\nelse:\n    print(f\"{number} is not a prime number\")\n",
+      "description": "",
+      "created_at": "2026-09-13T07:30:20.159Z"
+    },
+    {
+      "id": "prog_2ef780f7-c439-4f57-9f24-b5a67041fe8c",
+      "user_id": "user_demo_default",
+      "title": "Check Prime Number in Python",
+      "language": "Python",
+      "code": "# Python program to check if a number is prime\n\ndef check_prime(num):\n    # Step 1: Numbers <= 1 are not prime\n    if num <= 1:\n        return False\n\n    # Step 2: Check divisors from 2 up to num - 1\n    for i in range(2, num):\n        if num % i == 0:\n            return False  # Found a divisor, not prime\n\n    return True  # No divisors found, it is prime\n\n# Test with a sample number\nnumber = 7\nif check_prime(number):\n    print(f\"{number} is a prime number\")\nelse:\n    print(f\"{number} is not a prime number\")\n",
+      "description": "",
+      "created_at": "2026-09-13T07:30:18.528Z"
+    },
+    {
+      "id": "prog_17692aff-b67c-4332-bfb1-d1c9770fc2dc",
+      "user_id": "user_demo_default",
+      "title": "Check Prime Number in Python",
+      "language": "Python",
+      "code": "# Python program to check if a number is prime\n\ndef check_prime(num):\n    # Step 1: Numbers <= 1 are not prime\n    if num <= 1:\n        return False\n\n    # Step 2: Check divisors from 2 up to num - 1\n    for i in range(2, num):\n        if num % i == 0:\n            return False  # Found a divisor, not prime\n\n    return True  # No divisors found, it is prime\n\n# Test with a sample number\nnumber = 7\nif check_prime(number):\n    print(f\"{number} is a prime number\")\nelse:\n    print(f\"{number} is not a prime number\")\n",
+      "description": "",
+      "created_at": "2026-09-13T07:15:03.508Z"
+    },
+    {
+      "id": "prog_5fcbd6e9-1ecb-4b5a-9fb5-c18fe100ac9a",
+      "user_id": "user_demo_default",
+      "title": "Python Prime Checker",
+      "language": "Python",
+      "code": "# Python program to check if a number is prime\n\ndef check_prime(num):\n    # Step 1: Numbers <= 1 are not prime\n    if num <= 1:\n        return False\n\n    # Step 2: Check divisors from 2 up to num - 1\n    for i in range(2, num):\n        if num % i == 0:\n            return False  # Found a divisor, not prime\n\n    return True  # No divisors found, it is prime\n\n# Test with a sample number\nnumber = 7\nif check_prime(number):\n    print(f\"{number} is a prime number\")\nelse:\n    print(f\"{number} is not a prime number\")\n",
+      "description": "Beginner prime check",
+      "created_at": "2026-09-13T07:10:39.208Z"
+    }
+  ],
+  "executions": [
+    {
+      "id": "exec_da302e40-1f1e-4499-ba28-9f504d9a7202",
+      "user_id": null,
+      "program_id": null,
+      "language": "python",
+      "code": "# Python program to check if a number is prime\n\ndef check_prime(num):\n    # Step 1: Numbers <= 1 are not prime\n    if num <= 1:\n        return False\n\n    # Step 2: Check divisors from 2 up to num - 1\n    for i in range(2, num):\n        if num % i == 0:\n            return False  # Found a divisor, not prime\n\n    return True  # No divisors found, it is prime\n\n# Test with a sample number\nnumber = 7\nif check_prime(number):\n    print(f\"{number} is a prime number\")\nelse:\n    print(f\"{number} is not a prime number\")\n",
+      "input": "",
+      "output": "7 is a prime number\r\n",
+      "error": "",
+      "execution_time": 3.169,
+      "created_at": "2026-09-13T07:10:39.188Z"
+    },
+    {
+      "id": "exec_8b871910-bedf-446b-bf38-e2f869dbd2c9",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Python program to check if a number is prime\n\ndef check_prime(num):\n    # Step 1: Numbers <= 1 are not prime\n    if num <= 1:\n        return False\n\n    # Step 2: Check divisors from 2 up to num - 1\n    for i in range(2, num):\n        if num % i == 0:\n            return False  # Found a divisor, not prime\n\n    return True  # No divisors found, it is prime\n\n# Test with a sample number\nnumber = 7\nif check_prime(number):\n    print(f\"{number} is a prime number\")\nelse:\n    print(f\"{number} is not a prime number\")\n",
+      "input": "",
+      "output": "7 is a prime number\r\n",
+      "error": "",
+      "execution_time": 2.271,
+      "created_at": "2026-09-13T07:13:58.369Z"
+    },
+    {
+      "id": "exec_b1f789e8-5cef-4216-a7c7-adc9ea75f5cb",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Python program to check if a number is prime\n\ndef check_prime(num):\n    # Step 1: Numbers <= 1 are not prime\n    if num <= 1:\n        return False\n\n    # Step 2: Check divisors from 2 up to num - 1\n    for i in range(2, num):\n        if num % i == 0:\n            return False  # Found a divisor, not prime\n\n    return True  # No divisors found, it is prime\n\n# Test with a sample number\nnumber = 7\nif check_prime(number):\n    print(f\"{number} is a prime number\")\nelse:\n    print(f\"{number} is not a prime number\")\n",
+      "input": "",
+      "output": "7 is a prime number\r\n",
+      "error": "",
+      "execution_time": 2.615,
+      "created_at": "2026-09-13T07:28:49.387Z"
+    },
+    {
+      "id": "exec_7cec6b36-b434-4c23-a7f4-689cecd47a03",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "def bubble_sort(arr):\n    n = len(arr)\n    # Traverse through all array elements\n    for i in range(n):\n        swapped = False\n        # Last i elements are already in place\n        for j in range(0, n - i - 1):\n            if arr[j] > arr[j + 1]:\n                # Swap elements\n                arr[j], arr[j + 1] = arr[j + 1], arr[j]\n                swapped = True\n        # If no elements were swapped, array is already sorted\n        if not swapped:\n            break\n    return arr\n\nsample_list = [64, 34, 25, 12, 22, 11, 90]\nprint(\"Original List:\", sample_list)\nsorted_list = bubble_sort(sample_list.copy())\nprint(\"Sorted List:  \", sorted_list)\n",
+      "input": "",
+      "output": "Original List: [64, 34, 25, 12, 22, 11, 90]\r\nSorted List:   [11, 12, 22, 25, 34, 64, 90]\r\n",
+      "error": "",
+      "execution_time": 1.788,
+      "created_at": "2026-09-13T07:35:19.517Z"
+    },
+    {
+      "id": "exec_07553968-7b36-48b1-901a-e9d880138ed2",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "C",
+      "code": "# Solution for: explain Linear search algorithm\n\ndef solve_problem():\n    print(\"Running solution for: explain Linear search algorithm\")\n    sample_data = [10, 20, 30, 40, 50]\n    total = sum(sample_data)\n    print(f\"Processed Result: {total}\")\n\nif __name__ == \"__main__\":\n    solve_problem()\n",
+      "input": "",
+      "output": "",
+      "error": "Execution for C is not currently supported locally. You can still generate, edit, and explain the code.",
+      "execution_time": 1.102,
+      "created_at": "2026-09-13T07:35:41.982Z"
+    },
+    {
+      "id": "exec_044d1e28-1826-438d-8f24-dcb3cf14046e",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "C",
+      "code": "# Corrected Code\nnum = 10  # Initialized missing variable\n\n# Solution for: explain Linear search algorithm\n\ndef solve_problem():\n    print(\"Running solution for: explain Linear search algorithm\")\n    sample_data = [10, 20, 30, 40, 50]\n    total = sum(sample_data)\n    print(f\"Processed Result: {total}\")\n\nif __name__ == \"__main__\":\n    solve_problem()\n",
+      "input": "",
+      "output": "",
+      "error": "Execution for C is not currently supported locally. You can still generate, edit, and explain the code.",
+      "execution_time": 1.024,
+      "created_at": "2026-09-13T07:35:59.903Z"
+    },
+    {
+      "id": "exec_ef64458b-9dfb-4e07-a6e8-147ef2a01784",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "C",
+      "code": "# Corrected Code\nnum = 10  # Initialized missing variable\n\n# Corrected Code\nnum = 10  # Initialized missing variable\n\n# Solution for: explain Linear search algorithm\n\ndef solve_problem():\n    print(\"Running solution for: explain Linear search algorithm\")\n    sample_data = [10, 20, 30, 40, 50]\n    total = sum(sample_data)\n    print(f\"Processed Result: {total}\")\n\nif __name__ == \"__main__\":\n    solve_problem()\n",
+      "input": "",
+      "output": "",
+      "error": "Execution for C is not currently supported locally. You can still generate, edit, and explain the code.",
+      "execution_time": 1.213,
+      "created_at": "2026-09-13T07:36:09.907Z"
+    },
+    {
+      "id": "exec_cd444544-2414-4f46-8c14-c08a0da33add",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "C",
+      "code": "# Corrected Code\nnum = 10  # Initialized missing variable\n\n# Corrected Code\nnum = 10  # Initialized missing variable\n\n# Corrected Code\nnum = 10  # Initialized missing variable\n\n# Solution for: explain Linear search algorithm\n\ndef solve_problem():\n    print(\"Running solution for: explain Linear search algorithm\")\n    sample_data = [10, 20, 30, 40, 50]\n    total = sum(sample_data)\n    print(f\"Processed Result: {total}\")\n\nif __name__ == \"__main__\":\n    solve_problem()\n",
+      "input": "",
+      "output": "",
+      "error": "Execution for C is not currently supported locally. You can still generate, edit, and explain the code.",
+      "execution_time": 1.18,
+      "created_at": "2026-09-13T07:36:26.219Z"
+    },
+    {
+      "id": "exec_ffded55c-a1c0-4cbb-b865-fccc34c0c45d",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "C",
+      "code": "# Corrected Code\nnum = 10  # Initialized missing variable\n\n# Corrected Code\nnum = 10  # Initialized missing variable\n\n# Corrected Code\nnum = 10  # Initialized missing variable\n\n# Corrected Code\nnum = 10  # Initialized missing variable\n\n# Solution for: explain Linear search algorithm\n\ndef solve_problem():\n    print(\"Running solution for: explain Linear search algorithm\")\n    sample_data = [10, 20, 30, 40, 50]\n    total = sum(sample_data)\n    print(f\"Processed Result: {total}\")\n\nif __name__ == \"__main__\":\n    solve_problem()\n",
+      "input": "",
+      "output": "",
+      "error": "Execution for C is not currently supported locally. You can still generate, edit, and explain the code.",
+      "execution_time": 1.022,
+      "created_at": "2026-09-13T07:36:44.861Z"
+    },
+    {
+      "id": "exec_68982510-6620-40e4-889e-dd08633fccd3",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "C",
+      "code": "# Solution for: write a code in line\n\ndef solve_problem():\n    print(\"Running solution for: write a code in line\")\n    sample_data = [10, 20, 30, 40, 50]\n    total = sum(sample_data)\n    print(f\"Processed Result: {total}\")\n\nif __name__ == \"__main__\":\n    solve_problem()\n",
+      "input": "",
+      "output": "",
+      "error": "Execution for C is not currently supported locally. You can still generate, edit, and explain the code.",
+      "execution_time": 0.98,
+      "created_at": "2026-09-13T07:37:20.689Z"
+    },
+    {
+      "id": "exec_1d1eb466-aa8d-423a-907d-686e42c396eb",
+      "user_id": null,
+      "program_id": null,
+      "language": "python",
+      "code": "# Advanced: High-Performance Duplicate Detection for Large Datasets\nimport sys\nfrom typing import Iterator, Iterable, Set, Generator, Any\n\ndef find_duplicates_streaming(data_stream: Iterable[Any]) -> Generator[Any, None, None]:\n    \"\"\"\n    Streaming duplicate detector using hash sets.\n    Time Complexity: O(n) amortized | Space Complexity: O(unique items)\n    \"\"\"\n    seen: Set[Any] = set()\n    yielded_duplicates: Set[Any] = set()\n\n    for item in data_stream:\n        if item in seen:\n            if item not in yielded_duplicates:\n                yielded_duplicates.add(item)\n                yield item\n        else:\n            seen.add(item)\n\n# Performance Demonstration with simulated large dataset\ndef generate_large_stream(n: int) -> Iterator[int]:\n    \"\"\"Generates a large sequence on-the-fly without memory allocation.\"\"\"\n    for i in range(n):\n        # Inject deliberate duplicates\n        yield i % (n // 2)\n\nif __name__ == \"__main__\":\n    DATASET_SIZE = 100_000\n    print(f\"Processing streaming dataset with {DATASET_SIZE:,} elements...\")\n\n    stream = generate_large_stream(DATASET_SIZE)\n    duplicates = list(find_duplicates_streaming(stream))\n\n    print(f\"Duplicates found: {len(duplicates):,} unique values\")\n    print(f\"First 10 duplicates: {duplicates[:10]}\")\n    print(\"Memory Footprint: Scalable and streaming-friendly.\")\n",
+      "input": "",
+      "output": "Processing streaming dataset with 100,000 elements...\r\nDuplicates found: 50,000 unique values\r\nFirst 10 duplicates: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\r\nMemory Footprint: Scalable and streaming-friendly.\r\n",
+      "error": "",
+      "execution_time": 2.102,
+      "created_at": "2026-09-13T07:49:17.005Z"
+    },
+    {
+      "id": "exec_70bb1ed6-8c70-4e7e-ab8e-4593aad77fc1",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Beginner Python Program: Check Prime Number\n\ndef check_prime(number):\n    # Step 1: Numbers <= 1 are not prime\n    if number <= 1:\n        return False\n\n    # Step 2: Test every number from 2 up to number - 1\n    for i in range(2, number):\n        if number % i == 0:\n            return False  # Divisible with 0 remainder -> not prime\n\n    return True  # No divisors found -> prime!\n\n# Test with a number\nsample_num = 7\nif check_prime(sample_num):\n    print(f\"{sample_num} is a prime number\")\nelse:\n    print(f\"{sample_num} is not a prime number\")\n",
+      "input": "",
+      "output": "7 is a prime number\r\n",
+      "error": "",
+      "execution_time": 1.789,
+      "created_at": "2026-09-13T07:52:03.316Z"
+    },
+    {
+      "id": "exec_f125edc3-36a5-4bab-8401-be2eaf55f25b",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Beginner Python Program: Check Prime Number\n\ndef check_prime(number):\n    # Step 1: Numbers <= 1 are not prime\n    if number <= 1:\n        return False\n\n    # Step 2: Test every number from 2 up to number - 1\n    for i in range(2, number):\n        if number % i == 0:\n            return False  # Divisible with 0 remainder -> not prime\n\n    return True  # No divisors found -> prime!\n\n# Test with a number\nsample_num = 7\nif check_prime(sample_num):\n    print(f\"{sample_num} is a prime number\")\nelse:\n    print(f\"{sample_num} is not a prime number\")\n",
+      "input": "",
+      "output": "7 is a prime number\r\n",
+      "error": "",
+      "execution_time": 1.617,
+      "created_at": "2026-09-13T07:52:46.669Z"
+    },
+    {
+      "id": "exec_50d129f4-5f6d-4a2e-8a03-62637b893eae",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "def fibonacci(n):\n    a, b = 0, 1\n    res = []\n    for _ in range(n):\n        res.append(a)\n        a, b = b, a + b\n    return res\n\nprint(\"Fibonacci (8 terms):\", fibonacci(8))",
+      "input": "",
+      "output": "Fibonacci (8 terms): [0, 1, 1, 2, 3, 5, 8, 13]\r\n",
+      "error": "",
+      "execution_time": 1.963,
+      "created_at": "2026-09-13T07:52:58.056Z"
+    },
+    {
+      "id": "exec_67f3b463-d928-490e-9bb2-b5a498e3e84a",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Beginner Solution for: fabinocy\n\ndef solve_problem():\n    print(\"Running solution for: fabinocy\")\n    data = [10, 20, 30, 40, 50]\n    total = sum(data)\n    print(f\"Result: {total}\")\n\nif __name__ == \"__main__\":\n    solve_problem()\n",
+      "input": "",
+      "output": "Running solution for: fabinocy\r\nResult: 150\r\n",
+      "error": "",
+      "execution_time": 1.489,
+      "created_at": "2026-09-13T07:57:39.959Z"
+    },
+    {
+      "id": "exec_64318af8-3413-450b-855d-28c4b2ac3b77",
+      "user_id": null,
+      "program_id": null,
+      "language": "Python",
+      "code": "# Advanced Solution for: fabinocy sereies\n\ndef solve_problem():\n    print(\"Running solution for: fabinocy sereies\")\n    data = [10, 20, 30, 40, 50]\n    total = sum(data)\n    print(f\"Result: {total}\")\n\nif __name__ == \"__main__\":\n    solve_problem()\n",
+      "input": "",
+      "output": "Running solution for: fabinocy sereies\r\nResult: 150\r\n",
+      "error": "",
+      "execution_time": 2.591,
+      "created_at": "2026-09-13T08:48:00.848Z"
+    },
+    {
+      "id": "exec_7e60163c-b6a8-453d-9323-7cbb86aec7fa",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "def fibonacci(n):\n    a, b = 0, 1\n    res = []\n    for _ in range(n):\n        res.append(a)\n        a, b = b, a + b\n    return res\n\nprint(\"Fibonacci (8 terms):\", fibonacci(8))",
+      "input": "",
+      "output": "Fibonacci (8 terms): [0, 1, 1, 2, 3, 5, 8, 13]\r\n",
+      "error": "",
+      "execution_time": 1.773,
+      "created_at": "2026-09-13T08:51:40.247Z"
+    },
+    {
+      "id": "exec_bb89ff8b-d446-4e67-a9af-0bcfca55c31c",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "def fibonacci(n):\n    a, b = 0, 1\n    res = []\n    for _ in range(n):\n        res.append(a)\n        a, b = b, a + b\n    return res\n\nprint(\"Fibonacci (8 terms):\", fibonacci(8))",
+      "input": "",
+      "output": "Fibonacci (8 terms): [0, 1, 1, 2, 3, 5, 8, 13]\r\n",
+      "error": "",
+      "execution_time": 1.49,
+      "created_at": "2026-09-13T08:52:09.392Z"
+    },
+    {
+      "id": "exec_b5f480f3-5cee-45e0-abb3-77258f46b4ec",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Advanced Solution for: add two numbers\n\ndef solve_problem():\n    print(\"Running solution for: add two numbers\")\n    data = [10, 20, 30, 40, 50]\n    total = sum(data)\n    print(f\"Result: {total}\")\n\nif __name__ == \"__main__\":\n    solve_problem()\n",
+      "input": "",
+      "output": "Running solution for: add two numbers\r\nResult: 150\r\n",
+      "error": "",
+      "execution_time": 1.876,
+      "created_at": "2026-09-13T08:55:48.408Z"
+    },
+    {
+      "id": "exec_6968232f-a7cc-41e9-bf84-e0635fa05916",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Advanced Solution for: add two numbers\n\ndef solve_problem():\n    print(\"Running solution for: add two numbers\")\n    data = [10, 20, 30, 40, 50]\n    total = sum(data)\n    print(f\"Result: {total}\")\n\nif __name__ == \"__main__\":\n    solve_problem()\n",
+      "input": "",
+      "output": "Running solution for: add two numbers\r\nResult: 150\r\n",
+      "error": "",
+      "execution_time": 1.554,
+      "created_at": "2026-09-13T08:56:33.014Z"
+    },
+    {
+      "id": "exec_558a2caf-3324-4ae8-918b-e1241759aba3",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "C",
+      "code": "# Advanced High-Performance Primality Test in Python\nimport math\nfrom typing import List\n\ndef is_prime_fast(n: int) -> bool:\n    \"\"\"\n    6k +/- 1 Wheel Factorization Primality Test.\n    Time Complexity: O(sqrt(n) / 3) | Space Complexity: O(1)\n    \"\"\"\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n\n    limit = math.isqrt(n)\n    for i in range(5, limit + 1, 6):\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n    return True\n\ndef segmented_sieve(limit: int) -> List[int]:\n    \"\"\"Generates primes up to limit with memory-efficient odd-only sieve.\"\"\"\n    if limit < 2:\n        return []\n    sieve = bytearray([1]) * ((limit // 2) + 1)\n    for i in range(3, math.isqrt(limit) + 1, 2):\n        if sieve[i // 2]:\n            sieve[i * i // 2 :: i] = bytearray((limit - i * i) // (2 * i) + 1)\n    return [2] + [2 * i + 1 for i in range(1, len(sieve)) if sieve[i] and (2 * i + 1) <= limit]\n\nif __name__ == \"__main__\":\n    test_number = 1_000_000_007  # Large prime\n    result = is_prime_fast(test_number)\n    print(f\"Number {test_number:,} is prime: {result}\")\n    \n    first_primes = segmented_sieve(50)\n    print(f\"Primes up to 50: {first_primes}\")\n",
+      "input": "",
+      "output": "",
+      "error": "Execution for C is not currently supported locally. You can still generate, edit, and explain the code.",
+      "execution_time": 1.58,
+      "created_at": "2026-09-27T13:52:03.881Z"
+    },
+    {
+      "id": "exec_831db5e5-cdeb-46d8-9196-d2c1342419de",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "C",
+      "code": "# Advanced High-Performance Primality Test in Python\nimport math\nfrom typing import List\n\ndef is_prime_fast(n: int) -> bool:\n    \"\"\"\n    6k +/- 1 Wheel Factorization Primality Test.\n    Time Complexity: O(sqrt(n) / 3) | Space Complexity: O(1)\n    \"\"\"\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n\n    limit = math.isqrt(n)\n    for i in range(5, limit + 1, 6):\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n    return True\n\ndef segmented_sieve(limit: int) -> List[int]:\n    \"\"\"Generates primes up to limit with memory-efficient odd-only sieve.\"\"\"\n    if limit < 2:\n        return []\n    sieve = bytearray([1]) * ((limit // 2) + 1)\n    for i in range(3, math.isqrt(limit) + 1, 2):\n        if sieve[i // 2]:\n            sieve[i * i // 2 :: i] = bytearray((limit - i * i) // (2 * i) + 1)\n    return [2] + [2 * i + 1 for i in range(1, len(sieve)) if sieve[i] and (2 * i + 1) <= limit]\n\nif __name__ == \"__main__\":\n    test_number = 1_000_000_007  # Large prime\n    result = is_prime_fast(test_number)\n    print(f\"Number {test_number:,} is prime: {result}\")\n    \n    first_primes = segmented_sieve(50)\n    print(f\"Primes up to 50: {first_primes}\")\n",
+      "input": "",
+      "output": "",
+      "error": "Execution for C is not currently supported locally. You can still generate, edit, and explain the code.",
+      "execution_time": 1.104,
+      "created_at": "2026-09-27T13:52:16.582Z"
+    },
+    {
+      "id": "exec_07e898c2-051a-45c0-aa0a-ef269577c168",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "C",
+      "code": "# Advanced: High-Performance Duplicate Detection for Large Datasets\nimport sys\nfrom typing import Iterator, Iterable, Set, Generator, Any\n\ndef find_duplicates_streaming(data_stream: Iterable[Any]) -> Generator[Any, None, None]:\n    \"\"\"\n    Streaming duplicate detector using hash sets.\n    Time Complexity: O(n) amortized | Space Complexity: O(unique items)\n    \"\"\"\n    seen: Set[Any] = set()\n    yielded_duplicates: Set[Any] = set()\n\n    for item in data_stream:\n        if item in seen:\n            if item not in yielded_duplicates:\n                yielded_duplicates.add(item)\n                yield item\n        else:\n            seen.add(item)\n\n# Performance Demonstration with simulated large dataset\ndef generate_large_stream(n: int) -> Iterator[int]:\n    \"\"\"Generates a large sequence on-the-fly without memory allocation.\"\"\"\n    for i in range(n):\n        # Inject deliberate duplicates\n        yield i % (n // 2)\n\nif __name__ == \"__main__\":\n    DATASET_SIZE = 100_000\n    print(f\"Processing streaming dataset with {DATASET_SIZE:,} elements...\")\n\n    stream = generate_large_stream(DATASET_SIZE)\n    duplicates = list(find_duplicates_streaming(stream))\n\n    print(f\"Duplicates found: {len(duplicates):,} unique values\")\n    print(f\"First 10 duplicates: {duplicates[:10]}\")\n    print(\"Memory Footprint: Scalable and streaming-friendly.\")\n",
+      "input": "",
+      "output": "",
+      "error": "Execution for C is not currently supported locally. You can still generate, edit, and explain the code.",
+      "execution_time": 1.03,
+      "created_at": "2026-09-27T13:52:26.186Z"
+    },
+    {
+      "id": "exec_2dfdb3a9-db1d-4926-9b4d-0b4a9eca357e",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "C",
+      "code": "import random\nfrom typing import List\n\ndef quicksort_3way(arr: List[int], low: int, high: int) -> None:\n    \"\"\"\n    3-Way Partitioning QuickSort (Dutch National Flag Algorithm).\n    Time Complexity: O(n log n) | Space: O(log n)\n    \"\"\"\n    while low < high:\n        if high - low <= 10:\n            # Insertion sort threshold for small subarrays\n            for i in range(low + 1, high + 1):\n                key = arr[i]\n                j = i - 1\n                while j >= low and arr[j] > key:\n                    arr[j + 1] = arr[j]\n                    j -= 1\n                arr[j + 1] = key\n            break\n\n        # Randomized pivot\n        pivot_idx = random.randint(low, high)\n        arr[low], arr[pivot_idx] = arr[pivot_idx], arr[low]\n        pivot = arr[low]\n\n        lt = low      # arr[low..lt-1] < pivot\n        gt = high     # arr[gt+1..high] > pivot\n        i = low + 1   # arr[lt..i-1] == pivot\n\n        while i <= gt:\n            if arr[i] < pivot:\n                arr[lt], arr[i] = arr[i], arr[lt]\n                lt += 1\n                i += 1\n            elif arr[i] > pivot:\n                arr[i], arr[gt] = arr[gt], arr[i]\n                gt -= 1\n            else:\n                i += 1\n\n        # Recurse on smaller half first for stack safety\n        if (lt - 1) - low < high - (gt + 1):\n            quicksort_3way(arr, low, lt - 1)\n            low = gt + 1\n        else:\n            quicksort_3way(arr, gt + 1, high)\n            high = lt - 1\n\nif __name__ == \"__main__\":\n    dataset = [64, 34, 25, 12, 22, 11, 90, 22, 64, 11, 88, 3]\n    print(\"Unsorted Array:\", dataset)\n    quicksort_3way(dataset, 0, len(dataset) - 1)\n    print(\"Sorted Array:  \", dataset)\n",
+      "input": "",
+      "output": "",
+      "error": "Execution for C is not currently supported locally. You can still generate, edit, and explain the code.",
+      "execution_time": 1.177,
+      "created_at": "2026-09-27T13:52:33.266Z"
+    },
+    {
+      "id": "exec_25539699-9015-438a-9649-6b5cbadb7b6d",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Beginner Python Program: Check Prime Number\n\ndef check_prime(number):\n    # Step 1: Numbers <= 1 are not prime\n    if number <= 1:\n        return False\n\n    # Step 2: Test every number from 2 up to number - 1\n    for i in range(2, number):\n        if number % i == 0:\n            return False  # Divisible with 0 remainder -> not prime\n\n    return True  # No divisors found -> prime!\n\n# Test with a number\nsample_num = 7\nif check_prime(sample_num):\n    print(f\"{sample_num} is a prime number\")\nelse:\n    print(f\"{sample_num} is not a prime number\")\n",
+      "input": "",
+      "output": "7 is a prime number\r\n",
+      "error": "",
+      "execution_time": 3.493,
+      "created_at": "2026-09-27T13:52:46.955Z"
+    },
+    {
+      "id": "exec_12e3983e-57df-4bee-a49c-d0633e28f4d9",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Beginner Python: Find duplicate numbers in a list\n\nnumbers = [10, 25, 5, 40, 15, 25, 10, 5]\nduplicates = []\n\nfor item in numbers:\n    # If item appears more than once and not already in duplicates list\n    if numbers.count(item) > 1 and item not in duplicates:\n        duplicates.append(item)\n\nprint(\"Original list:\", numbers)\nprint(\"Duplicate values:\", duplicates)\n",
+      "input": "",
+      "output": "Original list: [10, 25, 5, 40, 15, 25, 10, 5]\r\nDuplicate values: [10, 25, 5]\r\n",
+      "error": "",
+      "execution_time": 1.865,
+      "created_at": "2026-09-27T13:52:54.653Z"
+    },
+    {
+      "id": "exec_3e439e14-5c0a-4697-a585-7f5dc0ae5909",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "C",
+      "code": "# Intermediate Solution for: crime lodge number\n\ndef solve_problem():\n    print(\"Running solution for: crime lodge number\")\n    data = [10, 20, 30, 40, 50]\n    total = sum(data)\n    print(f\"Result: {total}\")\n\nif __name__ == \"__main__\":\n    solve_problem()\n",
+      "input": "",
+      "output": "",
+      "error": "Execution for C is not currently supported locally. You can still generate, edit, and explain the code.",
+      "execution_time": 1.419,
+      "created_at": "2026-09-27T13:53:31.731Z"
+    },
+    {
+      "id": "exec_c3beb854-fa2b-4b8d-a211-be194acca750",
+      "user_id": null,
+      "program_id": null,
+      "language": "C",
+      "code": "#include <stdio.h>\nint main() { printf(\"C Code Executed Successfully!\\n\"); return 0; }",
+      "input": "",
+      "output": "C Code Executed Successfully!",
+      "error": "",
+      "execution_time": 3.843,
+      "created_at": "2026-09-27T14:18:26.872Z"
+    },
+    {
+      "id": "exec_4415902a-7f65-42c7-b25f-2f030be02f8e",
+      "user_id": null,
+      "program_id": null,
+      "language": "Python",
+      "code": "print(\"Python Code Executed Successfully!\")",
+      "input": "",
+      "output": "Python Code Executed Successfully!\r\n",
+      "error": "",
+      "execution_time": 0.259,
+      "created_at": "2026-09-27T14:18:27.154Z"
+    },
+    {
+      "id": "exec_e5045023-8ff6-4e15-aa7c-25326628dfc1",
+      "user_id": null,
+      "program_id": null,
+      "language": "C++",
+      "code": "#include <iostream>\nint main() { std::cout << \"C++ Output OK\" << std::endl; return 0; }",
+      "input": "",
+      "output": "C++ Output OK",
+      "error": "",
+      "execution_time": 3.491,
+      "created_at": "2026-09-27T14:18:56.049Z"
+    },
+    {
+      "id": "exec_5d86dca3-a061-4aee-af7d-6fe31db97074",
+      "user_id": null,
+      "program_id": null,
+      "language": "Java",
+      "code": "public class Main { public static void main(String[] args) { System.out.println(\"Java Output OK\"); } }",
+      "input": "",
+      "output": "Java Output OK",
+      "error": "",
+      "execution_time": 3.757,
+      "created_at": "2026-09-27T14:18:59.836Z"
+    },
+    {
+      "id": "exec_9354ff98-dbc6-426b-ae96-96f2b71e69d2",
+      "user_id": null,
+      "program_id": null,
+      "language": "JavaScript",
+      "code": "console.log(\"JS Output OK\");",
+      "input": "",
+      "output": "JS Output OK\n",
+      "error": "",
+      "execution_time": 0.726,
+      "created_at": "2026-09-27T14:19:00.570Z"
+    },
+    {
+      "id": "exec_cd11f66a-b4b4-40b8-824d-5cf4ce96c433",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Beginner Python Program: Check Prime Number\n\ndef check_prime(number):\n    # Step 1: Numbers <= 1 are not prime\n    if number <= 1:\n        return False\n\n    # Step 2: Test every number from 2 up to number - 1\n    for i in range(2, number):\n        if number % i == 0:\n            return False  # Divisible with 0 remainder -> not prime\n\n    return True  # No divisors found -> prime!\n\n# Test with a number\nsample_num = 7\nif check_prime(sample_num):\n    print(f\"{sample_num} is a prime number\")\nelse:\n    print(f\"{sample_num} is not a prime number\")\n",
+      "input": "",
+      "output": "7 is a prime number\r\n",
+      "error": "",
+      "execution_time": 0.265,
+      "created_at": "2026-09-27T14:19:45.636Z"
+    },
+    {
+      "id": "exec_a780b4da-2f40-47c1-9e8d-4f302e3c6152",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Advanced Primality Test in Python: 6k +/- 1 Wheel Factorization & Bitwise Sieve\nimport math\nfrom typing import List\n\ndef is_prime_fast(n: int) -> bool:\n    \"\"\"\n    6k +/- 1 Wheel Factorization Primality Test.\n    Time Complexity: O(sqrt(n) / 3) | Space Complexity: O(1)\n    \"\"\"\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n\n    # Check divisors of form 6k - 1 and 6k + 1 up to sqrt(n)\n    limit = math.isqrt(n)\n    for i in range(5, limit + 1, 6):\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n    return True\n\ndef segmented_sieve(limit: int) -> List[int]:\n    \"\"\"Generates primes up to limit with memory-efficient odd-only bytearray sieve.\"\"\"\n    if limit < 2:\n        return []\n    sieve = bytearray([1]) * ((limit // 2) + 1)\n    for i in range(3, math.isqrt(limit) + 1, 2):\n        if sieve[i // 2]:\n            sieve[i * i // 2 :: i] = bytearray((limit - i * i) // (2 * i) + 1)\n    return [2] + [2 * i + 1 for i in range(1, len(sieve)) if sieve[i] and (2 * i + 1) <= limit]\n\nif __name__ == \"__main__\":\n    test_number = 1_000_000_007  # Known large prime\n    result = is_prime_fast(test_number)\n    print(f\"Number {test_number:,} is prime: {result}\")\n    \n    first_primes = segmented_sieve(50)\n    print(f\"Primes up to 50: {first_primes}\")\n",
+      "input": "",
+      "output": "Number 1,000,000,007 is prime: True\r\n",
+      "error": "Traceback (most recent call last):\r\n  File \"C:\\Users\\BATHUL~1.VEN\\AppData\\Local\\Temp\\voice-coding-exec\\script_f6296402-80fa-49b4-bcf6-bca52c457885.py\", line 39, in <module>\r\n    first_primes = segmented_sieve(50)\r\n  File \"C:\\Users\\BATHUL~1.VEN\\AppData\\Local\\Temp\\voice-coding-exec\\script_f6296402-80fa-49b4-bcf6-bca52c457885.py\", line 31, in segmented_sieve\r\n    sieve[i * i // 2 :: i] = bytearray((limit - i * i) // (2 * i) + 1)\r\n    ~~~~~^^^^^^^^^^^^^^^^^\r\nValueError: attempt to assign bytes of size 7 to extended slice of size 8\r\n",
+      "execution_time": 0.348,
+      "created_at": "2026-09-27T14:19:55.971Z"
+    },
+    {
+      "id": "exec_c9ffce6e-9147-48b3-8e92-15e36c599c7b",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Corrected Code\nnum = 10  # Fixed: Initialized variable\n\n# Advanced Primality Test in Python: 6k +/- 1 Wheel Factorization & Bitwise Sieve\nimport math\nfrom typing import List\n\ndef is_prime_fast(n: int) -> bool:\n    \"\"\"\n    6k +/- 1 Wheel Factorization Primality Test.\n    Time Complexity: O(sqrt(n) / 3) | Space Complexity: O(1)\n    \"\"\"\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n\n    # Check divisors of form 6k - 1 and 6k + 1 up to sqrt(n)\n    limit = math.isqrt(n)\n    for i in range(5, limit + 1, 6):\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n    return True\n\ndef segmented_sieve(limit: int) -> List[int]:\n    \"\"\"Generates primes up to limit with memory-efficient odd-only bytearray sieve.\"\"\"\n    if limit < 2:\n        return []\n    sieve = bytearray([1]) * ((limit // 2) + 1)\n    for i in range(3, math.isqrt(limit) + 1, 2):\n        if sieve[i // 2]:\n            sieve[i * i // 2 :: i] = bytearray((limit - i * i) // (2 * i) + 1)\n    return [2] + [2 * i + 1 for i in range(1, len(sieve)) if sieve[i] and (2 * i + 1) <= limit]\n\nif __name__ == \"__main__\":\n    test_number = 1_000_000_007  # Known large prime\n    result = is_prime_fast(test_number)\n    print(f\"Number {test_number:,} is prime: {result}\")\n    \n    first_primes = segmented_sieve(50)\n    print(f\"Primes up to 50: {first_primes}\")\n",
+      "input": "",
+      "output": "Number 1,000,000,007 is prime: True\r\n",
+      "error": "Traceback (most recent call last):\r\n  File \"C:\\Users\\BATHUL~1.VEN\\AppData\\Local\\Temp\\voice-coding-exec\\script_aa2181e1-33d3-4e52-a6e9-5fce2463b1db.py\", line 42, in <module>\r\n    first_primes = segmented_sieve(50)\r\n  File \"C:\\Users\\BATHUL~1.VEN\\AppData\\Local\\Temp\\voice-coding-exec\\script_aa2181e1-33d3-4e52-a6e9-5fce2463b1db.py\", line 34, in segmented_sieve\r\n    sieve[i * i // 2 :: i] = bytearray((limit - i * i) // (2 * i) + 1)\r\n    ~~~~~^^^^^^^^^^^^^^^^^\r\nValueError: attempt to assign bytes of size 7 to extended slice of size 8\r\n",
+      "execution_time": 0.524,
+      "created_at": "2026-09-27T14:20:02.891Z"
+    },
+    {
+      "id": "exec_ca1207cb-c14c-4e6f-85e2-a400602f3c5f",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Intermediate: Find Duplicates Using Hash Sets in Python\ndef find_duplicates(numbers):\n    seen = set()\n    duplicates = set()\n\n    for num in numbers:\n        if num in seen:\n            duplicates.add(num)\n        else:\n            seen.add(num)\n\n    return list(duplicates)\n\nsample_data = [10, 25, 5, 40, 15, 25, 10, 99, 5]\nprint(\"Input List: \", sample_data)\nprint(\"Duplicates: \", find_duplicates(sample_data))\n",
+      "input": "",
+      "output": "Input List:  [10, 25, 5, 40, 15, 25, 10, 99, 5]\r\nDuplicates:  [25, 10, 5]\r\n",
+      "error": "",
+      "execution_time": 0.322,
+      "created_at": "2026-09-27T14:20:11.163Z"
+    },
+    {
+      "id": "exec_287b3039-1f4f-4065-96da-f332b24fdbc3",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Beginner Python Program: Check Prime Number\n\ndef check_prime(number):\n    # Step 1: Numbers <= 1 are not prime\n    if number <= 1:\n        return False\n\n    # Step 2: Test every number from 2 up to number - 1\n    for i in range(2, number):\n        if number % i == 0:\n            return False  # Divisible with 0 remainder -> not prime\n\n    return True  # No divisors found -> prime!\n\n# Test with a number\nsample_num = 7\nif check_prime(sample_num):\n    print(f\"{sample_num} is a prime number\")\nelse:\n    print(f\"{sample_num} is not a prime number\")\n",
+      "input": "",
+      "output": "7 is a prime number\r\n",
+      "error": "",
+      "execution_time": 0.39,
+      "created_at": "2026-09-27T15:15:04.162Z"
+    },
+    {
+      "id": "exec_1171f214-bf6a-4583-8ea2-cbf79e876758",
+      "user_id": "user_demo_default",
+      "program_id": null,
+      "language": "Python",
+      "code": "# Beginner Python Program: Check Prime Number\n\ndef check_prime(number):\n    # Step 1: Numbers <= 1 are not prime\n    if number <= 1:\n        return False\n\n    # Step 2: Test every number from 2 up to number - 1\n    for i in range(2, number):\n        if number % i == 0:\n            return False  # Divisible with 0 remainder -> not prime\n\n    return True  # No divisors found -> prime!\n\n# Test with a number\nsample_num = 7\nif check_prime(sample_num):\n    print(f\"{sample_num} is a prime number\")\nelse:\n    print(f\"{sample_num} is not a prime number\")\n",
+      "input": "",
+      "output": "7 is a prime number\r\n",
+      "error": "",
+      "execution_time": 0.581,
+      "created_at": "2026-09-27T15:15:13.171Z"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "voice-coding-assistant",
+  "version": "1.0.0",
+  "description": "Real-Time Coding Voice Assistant - AI-Powered Hands-Free Programming Assistant",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "start": "node server/src/index.js",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
